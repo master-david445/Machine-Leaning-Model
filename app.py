@@ -9,7 +9,7 @@ st.write("This app predicts an output using a trained ML model.")
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load("model.pkl")   # Make sure model.pkl is in the same folder
+        model = joblib.load("SVM.pkl")   # Make sure model.pkl is in the same folder
         return model
     except:
         st.error("Model file not found. Upload 'model.pkl' to the project directory.")
